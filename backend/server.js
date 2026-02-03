@@ -14,10 +14,10 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.use(cors());
 
 // Middleware
 app.use(express.json()); // Allows us to accept JSON data in the body
-app.use(cors());
 app.use('/api/auth', authRoutes);
 app.use('/api/vessels', vesselRoutes);
 app.use('/api/upload', uploadRoutes);
