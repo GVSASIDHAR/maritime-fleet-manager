@@ -9,7 +9,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Logs from "./pages/Logs";
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://maritime-backend-xyz.onrender.com';
+axios.defaults.baseURL = 'https://maritime-fleet-manager.onrender.com';
 const AppContent = () => {
     const { user, loading } = useAuth();
     const [activePage, setActivePage] = useState('dashboard');
