@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Logs from "./pages/Logs";
-
+import axios from 'axios';
 
 axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
