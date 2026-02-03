@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (email, password) => {
         try {
-            const res = await axios.post('http://localhost:5001/api/auth/login', { email, password });
+            const res = await axios.post('/api/auth/login', { email, password });
             const userData = res.data;
 
             // Save data
