@@ -1,0 +1,17 @@
+# Node Modules (Do not upload dependencies)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables (Keep your passwords safe!)
+.env
+backend/.env
+frontend/.env
+
+# Build outputs
+frontend/dist/
+frontend/build/
+
+# OS/Editor Files
+.DS_Store
+.vscode/
